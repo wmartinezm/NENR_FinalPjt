@@ -108,7 +108,7 @@ void loop() {
   switch(ext_state)
   {
     case EXT_STATE_DETECT:
-      if ((extensor > EXT_THRESHOLD) && (flx_elapsed_time > shortPulseThreshold))
+      if ((extensor > EXT_THRESHOLD) && (ext_elapsed_time > shortPulseThreshold))
       {
         ext_state = EXT_STATE_CHECK;
         ext_elapsed_time = 0;
