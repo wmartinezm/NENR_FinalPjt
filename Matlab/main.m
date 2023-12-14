@@ -19,6 +19,8 @@ end
 %% Statistical Analysis
 % Data for Time-to-Completion 
 % Consolidated data for Time to Completion
+data = readtable('Data,RP_Final,12-12.csv');
+
 time_data = [
     % Participant 1
     7.84, 5.43, 4.9,   % Level 1
