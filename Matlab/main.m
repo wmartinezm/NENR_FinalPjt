@@ -35,6 +35,7 @@ time_data = [
     7.02, 6.84, 7.5,   % Level 2
     10.61, 13.13, 11.9 % Level 3
 ];
+%separated by grou
 
 % Create boxplot
 figure;
