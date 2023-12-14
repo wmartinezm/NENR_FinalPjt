@@ -22,11 +22,11 @@ end
 data = readtable('Data,RP_Final,12-12.csv');\
 
 figure;
-boxplot([data.Level1_s_, data.Level2_s_, data.Level3_s_], data.Group);
+boxplot([data.Level1_s_, data.Level2_s_, data.Level1_s_[data.Level1_s_);
 
 %% Statistical Analysis
 % Data for Time-to-Completion 
-% Consolidated data for Time to Completion 
+% Consolidated data for Time to Completion
 data = readtable('Data,RP_Final,12-12.csv');
 
 time_data = [
