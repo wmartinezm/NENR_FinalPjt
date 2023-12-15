@@ -165,6 +165,24 @@ boxplot([moves_data([3,6,9], :)', min_moves(3)*ones(3, 1)], 'Labels', {'P1', 'P2
 title('Number of Moves vs. Level 3');
 ylabel('Number of Moves');
 
+figure;
+% Create boxplot for Level 1
+subplot(1, 3, 1);
+boxplot([time_data([1,4,6], :)', min_moves(1)*ones(3, 1)], 'Labels', {'P1', 'P2', 'P3', 'Min'});
+title('Time to completion (s) vs. Level 1');
+ylabel('Time to completion (s)');
+hold on;
+% Similar modifications for and Level 3
+subplot(1, 3, 2);
+boxplot([time_data([2,5,8], :)', min_moves(2)*ones(3, 1)], 'Labels', {'P1', 'P2', 'P3', 'Min'});
+title('Time to completion (s) vs. Level 2');
+ylabel('Time to completion (s)');
+hold on;
+% Similar modifications for Level 3
+subplot(1, 3, 3);
+boxplot([time_data([3,6,9], :)', min_moves(3)*ones(3, 1)], 'Labels', {'P1', 'P2', 'P3', 'Min'});
+title('Time to completion (s) vs. Level 3');
+ylabel('Time to completion (s)');
 
 % Statistical Tests and Indicators
 p_values_moves_levels = zeros(3, 3);
